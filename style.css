@@ -1,0 +1,65 @@
+/* 
+    COLOUR PALLETTE
+Dark brown - #F3C892
+Lighter brown - #FFF1BD
+Light Green - #A3DA8D
+Darker Green - #146356
+
+    FONTS
+font-family: 'Palanquin Dark', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark&family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FFF1BD;
+    float: right;
+}
+
+header {
+    background-color: #146356;
+    color: white;
+    padding: 3%;
+    text-align: center;
+    font-family: 'Palanquin Dark', sans-serif;
+    font-size: 25px;
+}
+
+main {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 5% 0 5% 0;
+}
+
+footer {
+    background-color: #146356;
+    color: white;
+    padding: 3%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+a{
+    color: #A3DA8D;
+}
+
+section { 
+    border: solid black 2px;
+    border-radius: 10px;
+
+    background-color:#A3DA8D ;
+
+    width: 250px; 
+    float: left; 
+    padding: 2% 2% 2% 2%;
+    margin: 2%;
+} 
