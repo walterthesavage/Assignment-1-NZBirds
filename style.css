@@ -61,5 +61,80 @@ section {
     width: 250px; 
     float: left; 
     padding: 2% 2% 2% 2%;
-    margin: 2%;
+    margin: 5% 2% 2% 2%;
 } 
+
+label{
+    font-size: 12.5px;
+}
+
+input, select, button{
+    width: 100%;
+    border-radius: 10px;
+    height: 30px;
+}
+
+button{
+    background-color: #146356;
+    color: white;
+}
+
+section a{
+    color: #146356;
+}
+
+.conservation-status-list li {
+    display: flex;
+    align-items: center;
+    padding: 2%;
+}
+
+.badge {
+    border-radius: 50%;
+    padding: 4%;
+}
+span {
+    margin-right: 2%;
+}
+
+/* CONSERVATION LABEL COLOURS */
+
+#nt {
+    background-color: #02a028;
+}
+
+#nu {
+    background-color: #649a31;
+}
+
+#r {
+    background-color: #99cb68;
+}
+
+#rec {
+    background-color: #fecc33;
+}
+
+#d {
+    background-color: #fe9a01;
+}
+
+#ni {
+    background-color: #c26967;
+}
+
+#nv {
+    background-color: #9b0000;
+}
+
+#ne {
+    background-color: #660032;
+}
+
+#nc {
+    background-color: #320033;
+}
+
+#ex {
+    background-color: black;
+}
