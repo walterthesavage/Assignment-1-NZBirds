@@ -16,67 +16,76 @@ font-family: 'Roboto', sans-serif;
 * {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
-    box-sizing: border-box; 
-   }
+    box-sizing: border-box;
+}
 
 body {
-     margin: 0;
-     padding: 0;
-   }
+    margin: 0;
+    padding: 0;
+}
 
 #main {
-     display: flex;
-     background-color: #FFF1BD;
-     min-height: calc(100vh - 20vh);
-   }
+    display: flex;
+    background-color: #FFF1BD;
+    min-height: calc(100vh - 20vh);
+}
 
 .side-filter {
-    width: 31vw;
-     background: #A3DA8D;
-     order: -1;
-     border-right: solid black 2px;
-     margin-right: 2%;
+    width: 25%;
+    background: #A3DA8D;
+    border-right: solid black 2px;
+    margin-right: 2%;
     padding: 2% 2% 2% 2%;
-   }
+}
 
-header, footer, article, nav, aside {
-     padding: 1em;
-   }
+header,
+footer,
+article,
+nav,
+aside {
+    padding: 1em;
+}
 
-header, footer {
+header,
+footer {
     height: 10vh;
     background: #146356;
     padding: 3%;
     color: white;
     text-align: center;
     font-family: 'Palanquin Dark', sans-serif;
-   }
+}
 
-header{
+header {
     font-size: 25px;
-   }
+}
 
-a{
+a {
     color: #A3DA8D;
 }
 
+section{
+    width: 75%;
+}
 /* SIDEBAR STYLING */
 
-.side-filter a{
+.side-filter a {
     color: #146356;
 }
 
-label{
+label {
     font-size: 12.5px;
 }
 
-input, select, button{
+input,
+select,
+button {
     width: 100%;
     border-radius: 10px;
     height: 30px;
 }
 
-button{
+button {
     background-color: #146356;
     color: white;
 }
@@ -91,11 +100,16 @@ button{
     border-radius: 50%;
     padding: 4%;
 }
+
 span {
     margin-right: 2%;
 }
 
-   /* CONSERVATION LABEL COLOURS */
+section {
+    padding: 1%;
+}
+
+/* CONSERVATION LABEL COLOURS */
 
 #nt {
     background-color: #02a028;
@@ -135,4 +149,29 @@ span {
 
 #ex {
     background-color: black;
+}
+
+/* CARDS STYLING */
+
+img {
+    width: 100%;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 40%;
+    float: left;
+    margin: 5%;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+    padding: 2px 16px;
 }
