@@ -95,7 +95,7 @@ button {
     padding: 2%;
 }
 
-.badge {
+#badge {
     border-radius: 50%;
     padding: 4%;
 }
@@ -110,52 +110,57 @@ section {
 
 /* CONSERVATION LABEL COLOURS */
 
-#nt {
+.nt {
     background-color: #02a028;
     color: #02a028;
 }
 
-#nu {
+.nu {
     background-color: #649a31;
     color: #649a31;
 }
 
-#r {
+.r {
     background-color: #99cb68;
     color: #99cb68;
 }
 
-#rec {
+.rec {
     background-color: #fecc33;
     color: #fecc33;
 }
 
-#d {
+.d {
     background-color: #fe9a01;
     color: #fe9a01;
 }
 
-#ni {
+.ni {
     background-color: #c26967;
     color: #c26967;
 }
 
-#nv {
+.nv {
     background-color: #9b0000;
     color: #9b0000;
 }
 
-#ne {
+.ne {
     background-color: #660032;
     color: #660032;
 }
 
-#nc {
+.nc {
     background-color: #320033;
     color: #320033;
 }
 
-#ex {
+.ex {
+    background-color: black;
+    color: black;
+}
+
+.dd {
     background-color: black;
     color: black;
 }

@@ -34,7 +34,7 @@ function birdCardsCreator(birds) {
 
         const birdInfo = [sciName, family, order, status, length, weight];
 
-// Adding cards to HTML
+        // Adding cards to HTML
 
         //Info to go in conatiner
 
@@ -109,7 +109,7 @@ function birdCardsCreator(birds) {
         }
 
         let statusDivide = document.createElement('hr');
-        statusDivide.setAttribute('id', colour);
+        statusDivide.setAttribute('class', colour);
 
         //Finiding the section in the HTML
 
@@ -140,11 +140,12 @@ function birdCardsCreator(birds) {
 
 function searchFilter() {
 
-    let cards = document.querySelectorAll('.card')
+    //Search Box
+
+    let cards = document.querySelectorAll('.card');
     let search_query = document.getElementById("search-filter").value;
 
     for (let i = 0; i < cards.length; i++) {
-        // If the text is within the card...
         if (cards[i].innerText.toLowerCase().includes(search_query.toLowerCase())) {
             cards[i].classList.remove("is-hidden");
         } else {
@@ -153,5 +154,23 @@ function searchFilter() {
     }
 }
 
+function conservationFilter() {
+    //Conservation Status
+
+    console.log('here!');
+
+    let cards = document.querySelectorAll('.card');
+    let conservation_query = document.getElementById('conservation-status-selector').value;
+
+    for (let i = 0; i < cards.length; i++) {
+        if (conservation_query == 'All') {
+            return;
+        } else if (cards[i].innerText.toLowerCase().includes(conservation_query.toLowerCase())) {
+            cards[i].classList.remove("is-hidden");  
+        } else {
+            cards[i].classList.add("is-hidden");
+        }
+    }
+}
 let body = document.querySelector('body');
 body.onload = fetchData();

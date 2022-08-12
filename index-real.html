@@ -22,17 +22,17 @@
             <label for="conservation-status">Conservation Status</label><br>
             <select name="conservation-status" id="conservation-status-selector">
                 <option value="all">All</option>
-                <option value="not-threatened">Not Threatened</option>
-                <option value="naturally-uncommon">Naturally Uncommon</option>
+                <option value="not threatened">Not Threatened</option>
+                <option value="naturally uncommon">Naturally Uncommon</option>
                 <option value="relict">Relict</option>
                 <option value="recovering">Recovering</option>
                 <option value="declining">Declining</option>
-                <option value="nationally-increasing">Nationally Increasing</option>
-                <option value="nationally-vulnerable">Nationally Vulnerable</option>
-                <option value="nationally-endangered">Nationally Endangered</option>
-                <option value="nationally-critical">Nationally Critical</option>
+                <option value="nationally increasing">Nationally Increasing</option>
+                <option value="nationally vulnerable">Nationally Vulnerable</option>
+                <option value="nationally endangered">Nationally Endangered</option>
+                <option value="nationally critical">Nationally Critical</option>
                 <option value="extinct">Extinct</option>
-                <option value="data-deficient">Data Deficient</option>
+                <option value="data deficient">Data Deficient</option>
             </select>
 
             <br><br>
@@ -48,7 +48,7 @@
 
             <br><br>
 
-            <button onclick="searchFilter()">FILTER RESULTS</button>
+            <button onclick="conservationFilter()">FILTER RESULTS</button>
 
             <br><br>
 
@@ -58,47 +58,47 @@
 
             <ul class="conservation-status-list">
                 <li>
-                    <span class="badge" id="nt"></span>
+                    <span id="badge" class="nt"></span>
                     Not Threatened
                 </li>
                 <li>
-                    <span class="badge" id="nu"></span>
+                    <span id="badge" class="nu"></span>
                     Naturally Uncommon
                 </li>
                 <li>
-                    <span class="badge" id="r"></span>
+                    <span id="badge" class="r"></span>
                     Relict
                 </li>
                 <li>
-                    <span class="badge" id="rec"></span>
+                    <span id="badge" class="rec"></span>
                     Recovering
                 </li>
                 <li>
-                    <span class="badge" id="d"></span>
+                    <span id="badge" class="d"></span>
                     Declining
                 </li>
                 <li>
-                    <span class="badge" id="ni"></span>
+                    <span id="badge" class="ni"></span>
                     Nationally Increasing
                 </li>
                 <li>
-                    <span class="badge" id="nv"></span>
+                    <span id="badge" class="nv"></span>
                     Nationally Vulnerable
                 </li>
                 <li>
-                    <span class="badge" id="ne"></span>
+                    <span id="badge" class="ne"></span>
                     Nationally Endangered
                 </li>
                 <li>
-                    <span class="badge" id="nc"></span>
+                    <span id="badge" class="nc"></span>
                     Nationally Critical
                 </li>
                 <li>
-                    <span class="badge" id="ex"></span>
+                    <span id="badge" class="ex"></span>
                     Extinct
                 </li>
                 <li>
-                    <span class="badge" id="ex"></span>
+                    <span id="badge" class="ex"></span>
                     Data Deficient
                 </li>
             </ul>
