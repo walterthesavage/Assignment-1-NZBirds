@@ -112,12 +112,12 @@ section {
 
 #nt {
     background-color: #02a028;
-    color: #02a028 ;
+    color: #02a028;
 }
 
 #nu {
     background-color: #649a31;
-    color: #649a31 ;
+    color: #649a31;
 }
 
 #r {
@@ -142,7 +142,7 @@ section {
 
 #nv {
     background-color: #9b0000;
-    color: #9b0000; 
+    color: #9b0000;
 }
 
 #ne {
@@ -188,7 +188,7 @@ img {
 
 .img-container {
     position: relative;
-     text-align: center;
+    text-align: center;
 }
 
 .maori-position {
@@ -196,7 +196,7 @@ img {
     position: absolute;
     bottom: 8px;
     left: 16px;
-    
+
 }
 
 .credit-position {
@@ -207,8 +207,14 @@ img {
     left: 16px;
 }
 
-.card > hr {
+.card>hr {
     border-top: 10px solid;
     padding: 0;
     margin: 0;
+}
+
+/* SEARCH FILTER */
+
+.is-hidden {
+    display: none;
 }

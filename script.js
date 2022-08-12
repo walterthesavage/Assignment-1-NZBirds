@@ -1,8 +1,5 @@
 const BIRDS_JSON = 'nzbird.json';
 
-let body = document.querySelector('body');
-body.onload = fetchData();
-
 async function fetchData() {
     let response = await fetch(BIRDS_JSON);
     if (!response.ok) {
@@ -12,12 +9,7 @@ async function fetchData() {
 
     let birdsData = JSON.parse(data);
 
-    console.log(birdsData[0].primary_name);
-
-    console.log('Leaving');
-
     birdCardsCreator(birdsData);
-
 }
 
 function birdCardsCreator(birds) {
@@ -42,7 +34,7 @@ function birdCardsCreator(birds) {
 
         const birdInfo = [sciName, family, order, status, length, weight];
 
-    // Adding cards to HTML
+// Adding cards to HTML
 
         //Info to go in conatiner
 
@@ -84,7 +76,7 @@ function birdCardsCreator(birds) {
         credit.textContent = 'Photo By ' + photographer;
 
         //Card, Container, Img Container and Status Divider
-        
+
         let divContainer = document.createElement('div');
         divContainer.setAttribute('class', 'container');
 
@@ -98,19 +90,19 @@ function birdCardsCreator(birds) {
 
         if (status == 'Not Threatened') {
             colour = 'nt';
-        } else if (status == 'Naturally Uncommon' ){
+        } else if (status == 'Naturally Uncommon') {
             colour = 'nc';
-        } else if (status == 'Relict' ){
+        } else if (status == 'Relict') {
             colour = 'r';
-        }  else if (status == 'Recovering' ){
+        } else if (status == 'Recovering') {
             colour = 'recc'
-        } else if (status == 'Declining' ){
+        } else if (status == 'Declining') {
             colour = 'd';
-        } else if (status == 'Nationally Increasing' ){
+        } else if (status == 'Nationally Increasing') {
             colour = 'ni';
-        } else if (status == 'Nationally Vulnerable' ){
+        } else if (status == 'Nationally Vulnerable') {
             colour = 'nv';
-        } else if (status == 'Nationally Endangered' ){
+        } else if (status == 'Nationally Endangered') {
             colour = 'ne'
         } else {
             colour = 'ex';
@@ -145,3 +137,21 @@ function birdCardsCreator(birds) {
         section.append(divCard);
     }
 }
+
+function searchFilter() {
+
+    let cards = document.querySelectorAll('.card')
+    let search_query = document.getElementById("search-filter").value;
+
+    for (let i = 0; i < cards.length; i++) {
+        // If the text is within the card...
+        if (cards[i].innerText.toLowerCase().includes(search_query.toLowerCase())) {
+            cards[i].classList.remove("is-hidden");
+        } else {
+            cards[i].classList.add("is-hidden");
+        }
+    }
+}
+
+let body = document.querySelector('body');
+body.onload = fetchData();
